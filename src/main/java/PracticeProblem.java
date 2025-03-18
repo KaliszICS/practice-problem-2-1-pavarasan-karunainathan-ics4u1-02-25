@@ -1,5 +1,5 @@
 public class PracticeProblem{
-	static int find(int number, int[] array){
+	static int find(int[] array, int number){
 		for(int i = 0; i < array.length; ++i){
 			if(array[i] == number){
 				return i;
@@ -8,7 +8,7 @@ public class PracticeProblem{
 		return -1;
 	}
 
-	static int findLast(String string, String[] array){
+	static int findLast(String[] array, String string){
 		for(int i = array.length-1; i > -1; --i){
 			if(array[i] == string){
 				return i;
@@ -17,7 +17,7 @@ public class PracticeProblem{
 		return -1;
 	}
 
-	static int findSecond(char character, char[] array){
+	static int findSecond(char[] array, char character){
 		boolean first = false;
 		for(int i = 0; i < array.length; i++){
 			if(array[i] == character){
