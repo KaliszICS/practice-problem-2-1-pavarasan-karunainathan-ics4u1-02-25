@@ -18,17 +18,17 @@ public class PracticeProblem{
 	}
 
 	static int findSecond(char[] array, char character){
-		boolean first = false;
+		int first = -1;
 		for(int i = 0; i < array.length; i++){
 			if(array[i] == character){
-				if(!first){
-					first = true;
+				if(first == -1){
+					first = i;
 				}else{
 					return i;
 				}
 			}
 		}
-		return -1;
+		return first;
 	}
 
 	public static void main(String args[]){}
