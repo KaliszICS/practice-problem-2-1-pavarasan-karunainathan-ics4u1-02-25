@@ -104,7 +104,7 @@ public class PracticeProblemTest {
          Class[] cArg = { String[].class, String.class };
          Method method = testClass.getDeclaredMethod("findLast", cArg);
          // Enter code here
-         assertEquals(3, (String) method.invoke(null, new String[] { "0", "1", "2", "3" }, "3"));
+         assertEquals(3, (int) method.invoke(null, new String[] { "0", "1", "2", "3" }, "3"));
       }
 
       catch (NoSuchMethodException e) {
@@ -122,7 +122,7 @@ public class PracticeProblemTest {
          Class[] cArg = { String[].class, String.class };
          Method method = testClass.getDeclaredMethod("findLast", cArg);
          // Enter code here
-         assertEquals(0, (String) method.invoke(null, new String[] { "0", "1", "2", "3" }, "0"));
+         assertEquals(0, (int) method.invoke(null, new String[] { "0", "1", "2", "3" }, "0"));
       }
 
       catch (NoSuchMethodException e) {
@@ -140,7 +140,7 @@ public class PracticeProblemTest {
          Class[] cArg = { String[].class, String.class };
          Method method = testClass.getDeclaredMethod("findLast", cArg);
          // Enter code here
-         assertEquals(-1, (String) method.invoke(null, new String[] { "0", "1", "2", "3" }, "adjfkls"));
+         assertEquals(-1, (int) method.invoke(null, new String[] { "0", "1", "2", "3" }, "adjfkls"));
       }
 
       catch (NoSuchMethodException e) {
@@ -158,7 +158,7 @@ public class PracticeProblemTest {
          Class[] cArg = { String[].class, String.class };
          Method method = testClass.getDeclaredMethod("findLast", cArg);
          // Enter code here
-         assertEquals(-1, (String) method.invoke(null, new String[] {}, "Help"));
+         assertEquals(-1, (int) method.invoke(null, new String[] {}, "Help"));
       }
 
       catch (NoSuchMethodException e) {
@@ -176,7 +176,7 @@ public class PracticeProblemTest {
          Class[] cArg = { String[].class, String.class };
          Method method = testClass.getDeclaredMethod("findLast", cArg);
          // Enter code here
-         assertEquals(3, (String) method.invoke(null, new String[] { "3", "3", "3", "3" }, "3"));
+         assertEquals(3, (int) method.invoke(null, new String[] { "3", "3", "3", "3" }, "3"));
       }
 
       catch (NoSuchMethodException e) {
@@ -194,7 +194,7 @@ public class PracticeProblemTest {
          Class[] cArg = { char[].class, char.class };
          Method method = testClass.getDeclaredMethod("findSecond", cArg);
          // Enter code here
-         assertEquals(3, (char) method.invoke(null, new char[] { '0', '1', '2', '3' }, '3'));
+         assertEquals(3, (int) method.invoke(null, new char[] { '0', '1', '2', '3' }, '3'));
       }
 
       catch (NoSuchMethodException e) {
@@ -212,7 +212,7 @@ public class PracticeProblemTest {
          Class[] cArg = { char[].class, char.class };
          Method method = testClass.getDeclaredMethod("findSecond", cArg);
          // Enter code here
-         assertEquals(2, (char) method.invoke(null, new char[] { '0', '2', '2', '3' }, '2'));
+         assertEquals(2, (int) method.invoke(null, new char[] { '0', '2', '2', '3' }, '2'));
       }
 
       catch (NoSuchMethodException e) {
@@ -230,7 +230,7 @@ public class PracticeProblemTest {
          Class[] cArg = { char[].class, char.class };
          Method method = testClass.getDeclaredMethod("findSecond", cArg);
          // Enter code here
-         assertEquals(-1, (char) method.invoke(null, new char[] { '0', '1', '2', '3' }, 'a'));
+         assertEquals(-1, (int) method.invoke(null, new char[] { '0', '1', '2', '3' }, 'a'));
       }
 
       catch (NoSuchMethodException e) {
@@ -248,7 +248,7 @@ public class PracticeProblemTest {
          Class[] cArg = { char[].class, char.class };
          Method method = testClass.getDeclaredMethod("findSecond", cArg);
          // Enter code here
-         assertEquals(-1, (char) method.invoke(null, new char[] {}, '3'));
+         assertEquals(-1, (int) method.invoke(null, new char[] {}, '3'));
       }
 
       catch (NoSuchMethodException e) {
@@ -266,7 +266,7 @@ public class PracticeProblemTest {
          Class[] cArg = { char[].class, char.class };
          Method method = testClass.getDeclaredMethod("findSecond", cArg);
          // Enter code here
-         assertEquals(1, (char) method.invoke(null, new char[] { '3', '3', '3', '3' }, '3'));
+         assertEquals(1, (int) method.invoke(null, new char[] { '3', '3', '3', '3' }, '3'));
       }
 
       catch (NoSuchMethodException e) {
